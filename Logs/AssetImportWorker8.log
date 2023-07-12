@@ -102,3 +102,21 @@ Received Import Request.
   path: Assets/Cube/1.mat
   artifactKey: Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Cube/1.mat using Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6d066f9724d7ea7aa21dd6e6118cfe') in 0.073667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8201.125479 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(7b8017d8ea399fd4c9bb3e7416fb323b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(7b8017d8ea399fd4c9bb3e7416fb323b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794e32b55cf75ed70e06d16e83d8f37c') in 0.126461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.542172 seconds.
+  path: Assets/Tree.prefab
+  artifactKey: Guid(4902a3576399f404681818baf3a868b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree.prefab using Guid(4902a3576399f404681818baf3a868b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355d7126c8c38efb1f821db2bd733c71') in 0.855684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.329610 seconds.
+  path: Assets/Tree_Textures
+  artifactKey: Guid(5a1d0520b37ae00479c7534a0204fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures using Guid(5a1d0520b37ae00479c7534a0204fe6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4106d76b71b0095962a60e41a13045e6') in 0.033447 seconds 

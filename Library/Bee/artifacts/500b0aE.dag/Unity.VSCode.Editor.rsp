@@ -107,6 +107,9 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -310,6 +313,9 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
+-analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 "Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/AssemblyNameProvider.cs"
 "Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/FileIO.cs"
 "Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/GUIDGenerator.cs"

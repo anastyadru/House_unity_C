@@ -261,3 +261,26 @@ System memory in use after: 103.4 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3187.
 Total: 139.586800 ms (FindLiveObjects: 128.471400 ms CreateObjectMapping: 0.374200 ms MarkObjects: 10.613000 ms  DeleteObjects: 0.124600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 3959.892989 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(e4f228854a99dd54baadad6809859834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(e4f228854a99dd54baadad6809859834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9b12547e9124910861d16ce36ccfb5') in 0.017549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Resources/DOTweenSettings.asset
+  artifactKey: Guid(71796cf16bbe5884fafc91a4f73b3d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DOTweenSettings.asset using Guid(71796cf16bbe5884fafc91a4f73b3d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efe4dbe5a446a5384ab73d8c6869d0c') in 0.079840 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 50.6 MB.
+System memory in use after: 50.8 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3187.
+Total: 54.810500 ms (FindLiveObjects: 0.481000 ms CreateObjectMapping: 0.367400 ms MarkObjects: 53.779000 ms  DeleteObjects: 0.177900 ms)
+

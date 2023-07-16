@@ -1,7 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class NewBehaviourScript : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
     public Transform target;
     public float rotationSpeed = 10f;
@@ -9,10 +9,22 @@ public class NewBehaviourScript : MonoBehaviour
 
     private bool isAutoRotating = false;
     private float autoRotationTimer = 0f;
+    
+    void Start()
+    {
+        target = GameObject.Find("House").transform;
+    }
 
     void Update()
     {
-
+        if (isAutoRotating)
+        {
+            AutoRotate();
+        }
+        else
+        {
+            HandleMouseInput();
+        }
     }
 
     public void StartAutoRotation()

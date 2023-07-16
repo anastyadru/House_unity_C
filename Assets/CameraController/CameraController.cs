@@ -3,8 +3,12 @@ using DG.Tweening;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public Transform target; // Ссылка на объект дома, вокруг которого будет вращаться камера
-    public float rotationDuration = 30f; // Время, за которое камера совершит оборот
+    public Transform target;
+    public float rotationSpeed = 10f;
+    public float autoRotationTime = 30f;
+
+    private bool isAutoRotating = false;
+    private float autoRotationTimer = 0f;
 
     void Update()
     {

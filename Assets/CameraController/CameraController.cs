@@ -11,4 +11,14 @@ public class NewBehaviourScript : MonoBehaviour
 
     private bool isAutoRotating = false; // флаг автоматического вращения камеры
     private float autoRotationTimer = 0f; // таймер автоматического вращения камеры
+
+    void Update()
+    {
+
+    }
+
+    public void StartAutoRotation()
+    {
+
+    }
 }

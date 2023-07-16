@@ -27,8 +27,4 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    public void StartAutoRotation()
-    {
-
-    }
 }

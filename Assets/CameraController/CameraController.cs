@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform target; // объект, на который смотрит камера
+    public float rotationSpeed = 1f; // скорость вращения камеры
+    public float autoRotationTime = 30f; // время одного оборота в автоматическом режиме
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool isAutoRotating = false; // флаг автоматического вращения камеры
+    private float autoRotationTimer = 0f; // таймер автоматического вращения камеры
 }

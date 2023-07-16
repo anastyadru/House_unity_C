@@ -114,7 +114,6 @@
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--r:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -315,7 +314,6 @@
 -r:"G:/Учеба/C#/Unity задачи/House_unity_C/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"

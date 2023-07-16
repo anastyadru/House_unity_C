@@ -305,7 +305,6 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 "Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/Api/CallbacksDelegator.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/Api/CallbacksDelegatorListener.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/Api/CallbacksHolder.cs"

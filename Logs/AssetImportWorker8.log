@@ -573,3 +573,44 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  4.023 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.3 MB.
+System memory in use after: 103.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3230.
+Total: 12.739100 ms (FindLiveObjects: 0.465600 ms CreateObjectMapping: 0.363500 ms MarkObjects: 11.790000 ms  DeleteObjects: 0.116100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 111684.459274 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(a1668ca6da1055142b3bc6a5545fdeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(a1668ca6da1055142b3bc6a5545fdeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a9127e52e1de23f77a83b4398a296f') in 0.020054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.821682 seconds.
+  path: Assets/Scripts/CameraController.cs
+  artifactKey: Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraController.cs using Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a88f203263a4f12aafb41c21a2b1da') in 0.030666 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.057925 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.3 MB.
+System memory in use after: 103.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3233.
+Total: 3.928100 ms (FindLiveObjects: 0.338200 ms CreateObjectMapping: 0.244600 ms MarkObjects: 3.184400 ms  DeleteObjects: 0.158400 ms)
+

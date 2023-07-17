@@ -320,7 +320,6 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/VSSettingsProvider.ref.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
 -analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
-"Assets/CameraController/CameraController.cs"
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
@@ -329,6 +328,7 @@
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
 "Assets/DoTween/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+"Assets/Scripts/CameraController.cs"
 -langversion:8.0
 
 /deterministic

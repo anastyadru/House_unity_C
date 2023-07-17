@@ -45,12 +45,15 @@ public class CameraController : MonoBehaviour
 
     public void StartAutoRotation()
     {
-
+        isAutoRotating = true;
+        autoRotationTimer = 0f;
+        transform.DORotate(new Vector3(0f, -360f, 0f), autoRotationTime, RotateMode.LocalAxisAdd).SetEase(Ease.Linear).SetLoops(-1);
     }
 
     public void StopAutoRotation()
     {
-
+        isAutoRotating = false;
+        transform.DOKill();
     }
 
 }

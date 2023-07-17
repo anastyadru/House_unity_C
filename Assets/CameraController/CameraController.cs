@@ -29,7 +29,9 @@ public class CameraController : MonoBehaviour
 
     private void AutoRotate()
     {
-        
+        autoRotationTimer += Time.deltaTime;
+        float angle = autoRotationTimer / autoRotationTime * 360f;
+        transform.DORotate(new Vector3(0f, -angle, 0f), autoRotationTime, RotateMode.LocalAxisAdd).SetEase(Ease.Linear).SetLoops(-1);
     }
 
     private void HandleMouseInput()

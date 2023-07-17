@@ -36,7 +36,11 @@ public class CameraController : MonoBehaviour
 
     private void HandleMouseInput()
     {
-
+        float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
+        transform.RotateAround(target.position, Vector3.up, mouseX * Time.deltaTime);
+        transform.RotateAround(target.position, transform.right, -mouseY * Time.deltaTime);
+        transform.LookAt(target);
     }
 
     public void StartAutoRotation()

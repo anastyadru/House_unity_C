@@ -27,4 +27,24 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    private void AutoRotate()
+    {
+        
+    }
+
+    private void HandleMouseInput()
+    {
+
+    }
+
+    public void StartAutoRotation()
+    {
+
+    }
+
+    public void StopAutoRotation()
+    {
+
+    }
+
 }

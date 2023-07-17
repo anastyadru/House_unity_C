@@ -502,3 +502,7 @@ System memory in use after: 103.5 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3218.
 Total: 4.970600 ms (FindLiveObjects: 0.431200 ms CreateObjectMapping: 0.387500 ms MarkObjects: 3.389500 ms  DeleteObjects: 0.759300 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023697 seconds.

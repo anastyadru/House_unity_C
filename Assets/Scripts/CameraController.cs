@@ -3,6 +3,10 @@ using DG.Tweening;
 
 public class CameraController : MonoBehaviour
 {
+
+    public GameObject house;
+    public GameObject camera;
+    
     public Transform target;
     public float rotationSpeed = 10f;
     public float autoRotationTime = 30f;

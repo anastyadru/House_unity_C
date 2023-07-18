@@ -1,13 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
 
-    public GameObject house;
-    public GameObject camera;
+    public Transform house;
+    public Transform camera;
     
-    public Transform target;
     public float rotationSpeed = 10f;
     public float autoRotationTime = 30f;
 

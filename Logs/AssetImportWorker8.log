@@ -654,3 +654,65 @@ System memory in use after: 103.5 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3239.
 Total: 12.918700 ms (FindLiveObjects: 1.433200 ms CreateObjectMapping: 0.471800 ms MarkObjects: 10.885300 ms  DeleteObjects: 0.124400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.045629 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.485 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3242.
+Total: 4.003000 ms (FindLiveObjects: 0.391700 ms CreateObjectMapping: 0.296800 ms MarkObjects: 3.123400 ms  DeleteObjects: 0.188400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 91424.779654 seconds.
+  path: Assets/Tree.prefab
+  artifactKey: Guid(4902a3576399f404681818baf3a868b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree.prefab using Guid(4902a3576399f404681818baf3a868b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b02fc1ca30a72844ffdd7fe5b00863') in 1.062201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.246515 seconds.
+  path: Assets/Tree_Textures/diffuse.png
+  artifactKey: Guid(c1f1ec2c515365d49b06909f9d2ac0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/diffuse.png using Guid(c1f1ec2c515365d49b06909f9d2ac0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be230e8f2be6b2bcd4e4b073fb5480a5') in 0.221513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001054 seconds.
+  path: Assets/Tree_Textures/translucency_gloss.png
+  artifactKey: Guid(a2d54d86a09c6884397c8d16af999539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/translucency_gloss.png using Guid(a2d54d86a09c6884397c8d16af999539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fd94e7b01c2a2d111c69c98022759d') in 0.080733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001083 seconds.
+  path: Assets/Tree_Textures/normal_specular.png
+  artifactKey: Guid(98945e16f6d7a02408cb828215122b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/normal_specular.png using Guid(98945e16f6d7a02408cb828215122b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09022ec5658e7d0d1964b48459f62e8b') in 0.165600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003153 seconds.
+  path: Assets/Tree_Textures/shadow.png
+  artifactKey: Guid(8b43687621dd14a4c950e45fda14b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/shadow.png using Guid(8b43687621dd14a4c950e45fda14b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80eb7f4b476a7a90d29054f0ff53821') in 0.312793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.030829 seconds.
+  path: Assets/Plane/1.mat
+  artifactKey: Guid(63bd1ac57a30f2243a4aea62427615dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plane/1.mat using Guid(63bd1ac57a30f2243a4aea62427615dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2b7db30a9d62e4075708315d8796f5') in 0.359762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.734692 seconds.
+  path: Assets/Cube/1.mat
+  artifactKey: Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cube/1.mat using Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b68e0f636e987e736914e00f5b3c0a') in 0.123100 seconds 

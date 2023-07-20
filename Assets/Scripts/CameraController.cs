@@ -35,6 +35,7 @@ public class CameraController : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
+                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(house.transform.position.x + 10f, camera.transform.position.y, house.transform.position.z), cameraMovementSpeed * Time.deltaTime);
                 
             }
         }

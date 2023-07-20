@@ -45,7 +45,7 @@ public class CameraController : MonoBehaviour
     {
         if (GUI.Button(new Rect(10, 10, 50, 50), currentCameraMode == CameraMode.Automatic ? automaticCameraModeTexture : manualCameraModeTexture))
         {
-            
+            currentCameraMode = currentCameraMode == CameraMode.Automatic ? CameraMode.Manual : CameraMode.Automatic;
         }
     }
 

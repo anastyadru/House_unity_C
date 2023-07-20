@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public Transform house;
     public Transform camera;
     
-    public float rotationSpeed = 10f;
+    public float rotationSpeed = 1f;
     public float autoRotationTime = 30f;
 
     private bool isAutoRotating = false;

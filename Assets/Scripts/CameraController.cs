@@ -26,7 +26,17 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        
+        if (currentCameraMode == CameraMode.Manual)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                
+            }
+        }
     }
 
 }

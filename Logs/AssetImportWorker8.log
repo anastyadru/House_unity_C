@@ -816,3 +816,9 @@ System memory in use after: 105.3 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3317.
 Total: 3.762100 ms (FindLiveObjects: 0.354800 ms CreateObjectMapping: 0.274100 ms MarkObjects: 3.044200 ms  DeleteObjects: 0.086200 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 179461.211444 seconds.
+  path: Assets/Scripts/CameraController.cs
+  artifactKey: Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraController.cs using Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4de918b8dc0045c8103fd76f1bd0000') in 0.057698 seconds 

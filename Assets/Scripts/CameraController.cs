@@ -7,12 +7,13 @@ public class CameraController : MonoBehaviour
 
     public Transform house;
     public Transform camera;
-    
-    public float rotationSpeed = 1f;
-    public float autoRotationTime = 30f;
-
-    private bool isAutoRotating = false;
-    private float autoRotationTimer = 0f;
+    public enum CameraMode { Automatic, Manual };
+    public CameraMode currentCameraMode;
+    public float cameraRotationSpeed = 1f;
+    public float cameraRotationTime = 30f;
+    public float cameraMovementSpeed = 1f;
+    public Texture2D automaticCameraModeTexture;
+    public Texture2D manualCameraModeTexture;
     
     void Start()
     {

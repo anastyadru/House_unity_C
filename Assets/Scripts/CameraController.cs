@@ -41,4 +41,14 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    void OnGUI()
+    {
+
+    }
+
+    void LateUpdate()
+    {
+
+    }
+
 }

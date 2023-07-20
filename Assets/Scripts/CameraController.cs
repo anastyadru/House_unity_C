@@ -43,7 +43,10 @@ public class CameraController : MonoBehaviour
 
     void OnGUI()
     {
-
+        if (GUI.Button(new Rect(10, 10, 50, 50), currentCameraMode == CameraMode.Automatic ? automaticCameraModeTexture : manualCameraModeTexture))
+        {
+            
+        }
     }
 
     void LateUpdate()

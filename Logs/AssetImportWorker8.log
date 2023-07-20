@@ -716,3 +716,23 @@ Received Import Request.
   path: Assets/Cube/1.mat
   artifactKey: Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Cube/1.mat using Guid(f9647bb821e13a74c8711d26bad5699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b68e0f636e987e736914e00f5b3c0a') in 0.123100 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.041419 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.650 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.0 MB.
+System memory in use after: 105.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3305.
+Total: 8.667600 ms (FindLiveObjects: 0.717900 ms CreateObjectMapping: 3.752300 ms MarkObjects: 4.019800 ms  DeleteObjects: 0.174400 ms)
+

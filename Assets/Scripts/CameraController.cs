@@ -15,6 +15,8 @@ public class CameraController : MonoBehaviour
     public Texture2D automaticCameraModeTexture;
     public Texture2D manualCameraModeTexture;
     
+    private Vector3 targetPosition;
+    
     void Start()
     {
         if (currentCameraMode == CameraMode.Automatic)

@@ -24,6 +24,10 @@ public class CameraController : MonoBehaviour
             camera.transform.LookAt(house.transform.position);
             camera.transform.DORotate(new Vector3(0f, -360f, 0f), cameraRotationTime, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
         }
+        else if (currentCameraMode == CameraMode.Manual)
+        {
+            targetPosition = camera.transform.position;
+        }
     }
 
     void Update()

@@ -310,8 +310,6 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Core.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/DoTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Connections/ControlConnection.cs"
 "Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Connections/InvalidConnection.cs"
 "Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Connections/IUnitConnection.cs"

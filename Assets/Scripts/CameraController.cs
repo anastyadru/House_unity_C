@@ -36,13 +36,13 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                targetPosition = new Vector3.Lerp(camera.transform.position, new Vector3(house.transform.position.x - 10f, camera.transform.position.y, house.transform.position.z), cameraMovementSpeed * Time.deltaTime);
+                targetPosition = new Vector3(house.transform.position.x - 10f, camera.transform.position.y, house.transform.position.z);
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(house.transform.position.x + 10f, camera.transform.position.y, house.transform.position.z), cameraMovementSpeed * Time.deltaTime);
-                camera.transform.LookAt(house.transform.position);
+                targetPosition = new Vector3(house.transform.position.x + 10f, camera.transform.position.y, house.transform.position.z);
             }
+            
         }
     }
 

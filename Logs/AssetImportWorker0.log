@@ -139,3 +139,9 @@ Received Import Request.
   artifactKey: Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/CameraController.cs using Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.777321 seconds  code(4) message(Build asset version error: assets/scripts/cameracontroller.cs in SourceAssetDB has modification time of '2023-07-23T21:41:46.1259248Z' while content on disk has modification time of '2023-07-23T21:48:11.622377Z')
   ERROR: Build asset version error: assets/scripts/cameracontroller.cs in SourceAssetDB has modification time of '2023-07-23T21:41:46.1259248Z' while content on disk has modification time of '2023-07-23T21:48:11.622377Z'
+========================================================================
+Received Import Request.
+  Time since last request: 29923.953077 seconds.
+  path: Assets/Scripts/CameraController.cs
+  artifactKey: Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraController.cs using Guid(f0017a83479d54c448a9f216f2b23780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834c55ea7122d8754a2ad2671e399501') in 0.068063 seconds 

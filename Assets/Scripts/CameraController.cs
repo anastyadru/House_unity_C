@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour
         {
             targetPosition = camera.transform.position;
         }
-    }
+    } 
 
     void Update()
     {
@@ -36,8 +36,7 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                camera.transform.position = Vector3.Lerp(camera.transform.position, new Vector3(house.transform.position.x - 10f, camera.transform.position.y, house.transform.position.z), cameraMovementSpeed * Time.deltaTime);
-                camera.transform.LookAt(house.transform.position);
+                targetPosition = new Vector3.Lerp(camera.transform.position, new Vector3(house.transform.position.x - 10f, camera.transform.position.y, house.transform.position.z), cameraMovementSpeed * Time.deltaTime);
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -52,12 +51,11 @@ public class CameraController : MonoBehaviour
         if (GUI.Button(new Rect(10, 10, 50, 50), currentCameraMode == CameraMode.Automatic ? automaticCameraModeTexture : manualCameraModeTexture))
         {
             currentCameraMode = currentCameraMode == CameraMode.Automatic ? CameraMode.Manual : CameraMode.Automatic;
+            if (currentCameraMode == CameraMode.Manual)
+            {
+                targetPosition = camera.transform.position;
+            }
         }
-    }
-
-    void LateUpdate()
-    {
-
     }
 
 }

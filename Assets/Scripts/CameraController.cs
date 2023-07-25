@@ -22,7 +22,8 @@ public class CameraController : MonoBehaviour
         if (currentCameraMode == CameraMode.Automatic)
         {
             camera.transform.LookAt(house.transform.position);
-            camera.transform.DORotate(new Vector3(0f, -360f, 0f), cameraRotationTime, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
+            camera.transform.RotateAround(house.position, Vector3.up, Time.deltaTime * (360f / 30f));
+            camera.transform.LookAt(house);
         }
         else if (currentCameraMode == CameraMode.Manual)
         {

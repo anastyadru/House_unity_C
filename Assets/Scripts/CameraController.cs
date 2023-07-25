@@ -46,6 +46,11 @@ public class CameraController : MonoBehaviour
             camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
             camera.transform.LookAt(house.transform.position);
         }
+        else if (currentCameraMode == CameraMode.Automatic)
+        {
+            camera.transform.RotateAround(house.position, Vector3.up, Time.deltaTime * (360f / 30f));
+            camera.transform.LookAt(house);
+        }
     }
 
     void OnGUI()

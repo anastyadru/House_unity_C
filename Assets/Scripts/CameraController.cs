@@ -42,7 +42,8 @@ public class CameraController : MonoBehaviour
             {
                 targetPosition = new Vector3(house.transform.position.x + 10f, camera.transform.position.y, house.transform.position.z);
             }
-            
+            camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
+            camera.transform.LookAt(house.transform.position);
         }
     }
 

@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
 
     public Transform house;
-    public Transform camera;
+    public Transform cameraTransform;
     public enum CameraMode { Automatic, Manual };
     public CameraMode currentCameraMode;
     public float cameraRotationSpeed = 1f;
@@ -21,13 +21,12 @@ public class CameraController : MonoBehaviour
     {
         if (currentCameraMode == CameraMode.Automatic)
         {
-            camera.transform.LookAt(house.transform.position);
-            // camera.transform.RotateAround(house.position, Vector3.up, Time.deltaTime * (360f / 30f));
-            // camera.transform.LookAt(house);
+            GetComponent<Camera>().transform.LookAt(house.transform.position);
+            DOTween.To(() => 0f, x => cameraTransform.RotateAround(house.position, Vector3.up, x), -360f, cameraRotationTime).SetLoops(-1, LoopType.Restart);
         }
         else if (currentCameraMode == CameraMode.Manual)
         {
-            targetPosition = camera.transform.position;
+            targetPosition = GetComponent<Camera>().transform.position;
         }
     } 
 
@@ -37,19 +36,19 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x - 10f, camera.transform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(house.transform.position.x - 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x + 10f, camera.transform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(house.transform.position.x + 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
             }
-            camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
-            camera.transform.LookAt(house.transform.position);
+            GetComponent<Camera>().transform.position = Vector3.Lerp(GetComponent<Camera>().transform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
+            GetComponent<Camera>().transform.LookAt(house.transform.position);
         }
         else if (currentCameraMode == CameraMode.Automatic)
         {
-            camera.transform.RotateAround(house.position, Vector3.up, Time.deltaTime * (360f / cameraRotationTime));
-            camera.transform.LookAt(house);
+            GetComponent<Camera>().transform.RotateAround(house.position, Vector3.up, Time.deltaTime * (360f / cameraRotationTime));
+            GetComponent<Camera>().transform.LookAt(house);
         }
     }
 
@@ -60,7 +59,7 @@ public class CameraController : MonoBehaviour
             currentCameraMode = currentCameraMode == CameraMode.Automatic ? CameraMode.Manual : CameraMode.Automatic;
             if (currentCameraMode == CameraMode.Manual)
             {
-                targetPosition = camera.transform.position;
+                targetPosition = cameraTransform.position;
             }
         }
     }

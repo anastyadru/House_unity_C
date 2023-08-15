@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 223974227}
+  - component: {fileID: 223974228}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -146,14 +147,35 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223974226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.40641627, y: 1.1110821, z: 2.3160324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 2076476183}
+  - {fileID: 1168195418}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223974228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223974226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0017a83479d54c448a9f216f2b23780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  house: {fileID: 0}
+  cameraTransform: {fileID: 0}
+  currentCameraMode: 0
+  cameraRotationTime: 30
+  cameraMovementSpeed: 1
+  automaticCameraModeTexture: {fileID: 0}
+  manualCameraModeTexture: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,9 +366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   house: {fileID: 0}
-  camera: {fileID: 0}
+  cameraTransform: {fileID: 0}
   currentCameraMode: 0
-  cameraRotationSpeed: 1
   cameraRotationTime: 30
   cameraMovementSpeed: 1
   automaticCameraModeTexture: {fileID: 0}
@@ -377,12 +398,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168195417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.40641627, y: 1.8889179, z: -2.3160324}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
-  m_Father: {fileID: 2076476183}
-  m_RootOrder: 0
+  m_Father: {fileID: 223974227}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1168195419
 BoxCollider:
@@ -537,11 +558,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076476179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.40641627, y: -1.1110821, z: -2.3160324}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children:
-  - {fileID: 1168195418}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 223974227}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

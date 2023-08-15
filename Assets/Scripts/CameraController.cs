@@ -53,7 +53,6 @@ public class CameraController : MonoBehaviour
                     isMoving = false;
                 }
             }
-                
             cameraTransform.LookAt(house.transform.position);
         }
     }

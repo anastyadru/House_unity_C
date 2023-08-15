@@ -42,8 +42,18 @@ public class CameraController : MonoBehaviour
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 targetPosition = new Vector3(house.transform.position.x + 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
+                isMoving = true;
             }
-            cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
+
+            if (isMoving)
+            {
+                cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetPosition, cameraMovementSpeed * Time.deltaTime);
+                if (Vector3.Distance(cameraTransform.position, targetPosition) < 0.1f)
+                {
+                    isMoving = false;
+                }
+            }
+                
             cameraTransform.LookAt(house.transform.position);
         }
     }

@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour
     public Texture2D manualCameraModeTexture;
     
     private Vector3 targetPosition;
+    private bool isMoving = false;
     
     void Start()
     {
@@ -36,6 +37,7 @@ public class CameraController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 targetPosition = new Vector3(house.transform.position.x - 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
+                isMoving = true;
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {

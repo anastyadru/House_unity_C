@@ -1,6 +1,5 @@
 using UnityEngine;
 using DG.Tweening;
-using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
@@ -8,7 +7,7 @@ public class CameraController : MonoBehaviour
     public Transform house;
     public Transform cameraTransform;
     public enum CameraMode { Automatic, Manual };
-    public CameraMode currentCameraMode;
+    public CameraMode currentCameraMode = CameraMode.Automatic;
     public float cameraRotationTime = 30f;
     public float cameraMovementSpeed = 1f;
     public Texture2D automaticCameraModeTexture;
@@ -36,12 +35,12 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x - 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(house.transform.position.x - 10f, cameraTransform.position.y, house.transform.position.z);
                 isMoving = true;
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x + 10f, GetComponent<Camera>().transform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(house.transform.position.x + 10f, cameraTransform.position.y, house.transform.position.z);
                 isMoving = true;
             }
 

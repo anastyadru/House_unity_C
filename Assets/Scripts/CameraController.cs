@@ -4,7 +4,7 @@ using DG.Tweening;
 public class CameraController : MonoBehaviour
 {
 
-    public Transform house;
+    public Transform Plane;
     public Transform cameraTransform;
     public enum CameraMode { Automatic, Manual };
     public CameraMode currentCameraMode = CameraMode.Automatic;
@@ -20,8 +20,8 @@ public class CameraController : MonoBehaviour
     {
         if (currentCameraMode == CameraMode.Automatic)
         {
-            cameraTransform.LookAt(house.transform.position);
-            DOTween.To(() => 0f, x => cameraTransform.RotateAround(house.position, Vector3.up, x), -360f, cameraRotationTime).SetLoops(-1, LoopType.Restart);
+            cameraTransform.LookAt(Plane.transform.position);
+            DOTween.To(() => 0f, x => cameraTransform.RotateAround(Plane.position, Vector3.up, x), -360f, cameraRotationTime).SetLoops(-1, LoopType.Restart);
         }
         else if (currentCameraMode == CameraMode.Manual)
         {
@@ -35,12 +35,12 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x - 10f, cameraTransform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(Plane.transform.position.x - 10f, cameraTransform.position.y, Plane.transform.position.z);
                 isMoving = true;
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                targetPosition = new Vector3(house.transform.position.x + 10f, cameraTransform.position.y, house.transform.position.z);
+                targetPosition = new Vector3(Plane.transform.position.x + 10f, cameraTransform.position.y, Plane.transform.position.z);
                 isMoving = true;
             }
 
@@ -52,7 +52,7 @@ public class CameraController : MonoBehaviour
                     isMoving = false;
                 }
             }
-            cameraTransform.LookAt(house.transform.position);
+            cameraTransform.LookAt(Plane.transform.position);
         }
     }
 

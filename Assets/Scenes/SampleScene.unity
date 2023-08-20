@@ -148,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223974226}
-  m_LocalRotation: {x: -0.349793, y: -0, z: -0, w: 0.93682706}
-  m_LocalPosition: {x: 3.862609, y: 13.2840395, z: 62.174072}
-  m_LocalScale: {x: 2.5750725, y: 3.1085563, z: 2.9572089}
+  m_LocalRotation: {x: 0.008802043, y: 0.008649743, z: 0.008649744, w: 0.99988645}
+  m_LocalPosition: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: 1, z: 1}
 --- !u!114 &223974228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0017a83479d54c448a9f216f2b23780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  house: {fileID: 1168195418}
+  Plane: {fileID: 0}
   cameraTransform: {fileID: 223974227}
   currentCameraMode: 0
   cameraRotationTime: 30
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0017a83479d54c448a9f216f2b23780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  house: {fileID: 0}
+  Plane: {fileID: 0}
   cameraTransform: {fileID: 0}
   currentCameraMode: 0
   cameraRotationTime: 30

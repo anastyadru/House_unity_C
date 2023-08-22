@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0017a83479d54c448a9f216f2b23780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plane: {fileID: 0}
+  Plane: {fileID: 2076476183}
   cameraTransform: {fileID: 223974227}
   currentCameraMode: 0
   cameraRotationTime: 30

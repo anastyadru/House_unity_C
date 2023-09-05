@@ -8,13 +8,14 @@ public class CameraController : MonoBehaviour
     public Transform cameraTransform;
     public enum CameraMode { Automatic, Manual };
     public CameraMode currentCameraMode = CameraMode.Automatic;
-    public float cameraRotationTime = 30f;
-    public float cameraMovementSpeed = 1f;
+    public float cameraRotationTime = 1f;
+    public float cameraMovementSpeed = 30f;
     public Texture2D automaticCameraModeTexture;
     public Texture2D manualCameraModeTexture;
     
     private Vector3 targetPosition;
     private bool isMoving = false;
+    private float timeSinceRotation = 0f;
     
     void Start()
     {
@@ -53,6 +54,15 @@ public class CameraController : MonoBehaviour
                 }
             }
             cameraTransform.LookAt(Plane.transform.position);
+        }
+        else if (currentCameraMode == CameraMode.Automatic)
+        {
+            timeSinceRotation += Time.deltaTime;
+            if (timeSinceRotation >= 30f)
+            {
+                timeSinceRotation = 0f;
+                DOTween.To(() => 0f, x => cameraTransform.RotateAround(Plane.position, Vector3.up, x), -360f, cameraRotationTime).SetLoops(-1, LoopType.Restart);
+            }
         }
     }
 

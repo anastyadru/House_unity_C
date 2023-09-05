@@ -267,7 +267,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -506,7 +506,7 @@ MonoBehaviour:
   Plane: {fileID: 2076476183}
   cameraTransform: {fileID: 1736950033}
   currentCameraMode: 0
-  cameraRotationTime: 30
+  cameraRotationTime: 60
   cameraMovementSpeed: 1
   automaticCameraModeTexture: {fileID: 0}
   manualCameraModeTexture: {fileID: 0}

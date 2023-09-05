@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public Transform cameraTransform;
     public enum CameraMode { Automatic, Manual };
     public CameraMode currentCameraMode = CameraMode.Automatic;
-    public float cameraRotationTime = 30f;
+    public float cameraRotationTime = 60f;
     public float cameraMovementSpeed = 1f;
     public Texture2D automaticCameraModeTexture;
     public Texture2D manualCameraModeTexture;
@@ -65,6 +65,7 @@ public class CameraController : MonoBehaviour
             {
                 targetPosition = cameraTransform.position;
             }
+            Start();
         }
     }
 
